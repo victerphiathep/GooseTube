@@ -1,27 +1,56 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+/* globals.css */
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+/* Reset some default styles */
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
-
+/* Set a dark background color */
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  background-color: #36393f; /* Discord's dark background color */
+  color: #fff; /* Text color for light text on dark background */
 }
+
+/* Style links */
+a {
+  color: #7289da; /* Discord's link color */
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Apply styles to specific elements as needed */
+/* For example, you can style headings, buttons, etc. */
+
+/* Heading styles */
+h1, h2, h3 {
+  color: #fff;
+}
+
+/* Button styles */
+button {
+  background-color: #7289da; /* Discord's button color */
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #677bc4; /* Darker color on hover */
+}
+
+/* Example input field styles */
+input[type="text"], input[type="email"], input[type="password"] {
+  background-color: #484c52; /* Discord-like input background */
+  color: #fff;
+  border: 1px solid #36393f; /* Discord-like input border color */
+  padding: 8px;
+  border-radius: 4px;
+}
+

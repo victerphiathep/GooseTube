@@ -38,7 +38,7 @@ export interface Video {
 export const getVideos = onCall({maxInstances: 1}, async () => {
   const querySnapshot =
     await firestore.collection(videoCollectionId).limit(10).get();
-  return querySnapshot.docs.map((doc) => doc.data());
+  return querySnapshot.docs.map((doc: { data: () => any; }) => doc.data());
 });
 
 export const generateUploadUrl = onCall(

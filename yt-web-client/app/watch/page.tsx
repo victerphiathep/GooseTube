@@ -1,6 +1,5 @@
 'use client';
 import { getVideos } from "../firebase/functions";
-
 import { useSearchParams } from 'next/navigation'
 
 export default function Watch() {
